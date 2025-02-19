@@ -28,4 +28,5 @@ else
 }
 
 mysqli_close($conn);
+hola
 ?>
