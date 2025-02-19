@@ -40,3 +40,27 @@ border: 2px white solid;
     <button type="submit">Enviar</button>
 </body>
 </html>
+<?php
+$server = "localhost";
+$user = "root";
+$password = "rootroot";
+$dbname = "concesionario";
+$conn = mysqli_connect($server, $user, $password, $dbname);
+if(!$conn)
+{
+    die ("Conexion fallida" . mysqli_connect_error());
+}
+$nombre = $_REQUEST['usuario'];
+$contra = $_REQUEST['contra'];
+$sql = "SELECT * FROM usuarios where nombre = $nombre && password = $contra";
+
+if (mysqli_query($conn,$sql))
+{
+    echo "El dneiodn";
+}
+else
+{
+    echo "no";
+}
+
+?>
