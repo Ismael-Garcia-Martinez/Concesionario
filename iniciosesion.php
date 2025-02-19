@@ -18,9 +18,8 @@ border: 2px white solid;
 margin: 0;
   }
 .iniciosesion{
-float: right;
-margin-top: 20px;
-margin-right: 30%;
+margin-top: 40px;
+margin-left: 42%;
 padding-bottom: 5px;
 width: 300px;
 background-color: grey;
@@ -41,10 +40,3 @@ border: 2px white solid;
     <button type="submit">Enviar</button>
 </body>
 </html>
-<?php
-
-
-
-
-
-?>

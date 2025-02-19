@@ -18,9 +18,8 @@ border: 2px white solid;
 margin: 0;
   }
 .registrarse{
-display: inline-block;
-margin-top: 20px;
-margin-left: 30%;
+margin-top: 40px;
+margin-left: 42%;
 padding-bottom: 5px;
 width: 300px;
 background-color: grey;
