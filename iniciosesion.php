@@ -34,8 +34,17 @@ border: 2px white solid;
 <h1><img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;"></h1>
 <form class="iniciosesion">
     <h2>Inicio Sesion</h2>
-    <label><b>Usuario: </b></label><input type="text" name="usuario" required>
+    <label><b>Usuario:</b></label><br><input type="text" name="usuario" required>
     <br><br>
-    <label><b>Contraseña: </b></label><input type="password" name="contra" required>
+    <label><b>Contraseña:</b></label><br><input type="password" name="contra" required>
+    <br><br>
+    <button type="submit">Enviar</button>
 </body>
 </html>
+<?php
+
+
+
+
+
+?>
