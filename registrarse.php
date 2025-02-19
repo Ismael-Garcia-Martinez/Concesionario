@@ -28,17 +28,7 @@ text-align: center;
 border-radius: 30px;
 border: 2px white solid;
 }
-.iniciosesion{
-float: right;
-margin-top: 20px;
-margin-right: 30%;
-padding-bottom: 5px;
-width: 300px;
-background-color: grey;
-text-align: center;
-border-radius: 30px;
-border: 2px white solid;
-}
+
 </style>
 </head>
 <body>
@@ -56,8 +46,6 @@ border: 2px white solid;
     <label><b> Confirmar Contrseña: </b></label><input type="password" required>
     <br><br>
     <button type="submit">Enviar</button>
-</form>
-<
 </form>
 </body>
 </html>
