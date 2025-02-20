@@ -86,12 +86,12 @@ margin: 0;
     </div>
 </a>
 </div>
-<a href="index.html">
+<a href="index-admin.php">
 <div class="inicio">
 <h3>Inicio</h3>
 </div>
 </a>
-<a href="anadirusuarios.html">
+<a href="anadirusuarios.php">
 <div class="añadir">
 <h2>ANADIR</h2>
 </div>
@@ -101,17 +101,17 @@ margin: 0;
 <h2>LISTAR</h2>
 </div>
 </a>
-<a href="buscar_usuario.html">
+<a href="buscar_usuario1.php">
 <div class="listar">
 <h2>BUSCAR</h2>
 </div>
 </a>
-<a href="modificar_usuarios.html">
+<a href="modificar_usuario1.php">
 <div class="listar">
 <h2>MODIFICAR</h2>
 </div>
 </a>
-<a href="borrar_usuario.html">
+<a href="borrar_usuario1.php">
 <div class="listar">
 <h2>BORRAR</h2>
 </div>
