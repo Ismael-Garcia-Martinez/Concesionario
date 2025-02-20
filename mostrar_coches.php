@@ -91,9 +91,9 @@ background-color: grey;
         <button type="submit">Alquilar</button>
     </td>
     <td>
-        <img src="img/opel-corsa.jpg" width="300px">
+        <img src="img/audia4.jpg" width="300px">
         <br>
-        <b>OPEL CORSA</b>
+        <b>AUDI A4</b>
         <br>
         <button type="submit">Alquilar</button>
     </td>   
