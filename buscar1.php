@@ -36,8 +36,8 @@ margin-top: 10%;
 </head>
 <body>
 <h1>
-<img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;">
-</h1>
+<img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;"></h1>
+<a href="index-admin.php"><input type="submit" value="Volver"></a>
 <form action="buscar.php" method="post">
 <h2>Buscar Coche</h2>
 <label for="buscar">Buscar por marca:</label>

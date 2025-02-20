@@ -29,6 +29,7 @@ border-radius: 10px;
 <h1>
 <img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;">
 </h1>
+<a href="index-admin.php"><input type="submit" value="Volver"></a>
 <div class="modificar">
     <h2>Seleccionar Usuario a Modificar</h2>
     <form action="modificar_usuario.php" method="post">

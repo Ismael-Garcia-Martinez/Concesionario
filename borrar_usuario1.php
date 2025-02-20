@@ -26,6 +26,7 @@ border-radius: 10px;
 </head>
 <body>
 <h1><img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;"></h1>
+<a href="index-admin.php"><input type="submit" value="Volver"></a>
 <div class="eliminar">
 <h2>Eliminar Usuario</h2>
 <form action="borrar_usuario.php" method="post">

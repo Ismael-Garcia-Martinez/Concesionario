@@ -38,6 +38,7 @@ margin-top: 10%;
 <h1>
 <img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;">
 </h1>
+<a href="index-admin.php"><input type="submit" value="Volver"></a>
 <form action="buscar_usuarios.php" method="post">
 <h2>Buscar Usuario</h2>
 <label for="buscarnombre">Buscar por nombre:</label>

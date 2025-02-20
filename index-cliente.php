@@ -26,6 +26,14 @@ margin: 0;
     height: 30px; 
     background-color: rgb(71, 209, 255); 
 }
+.mostrar{
+    width: 30%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    margin-left: 35%;
+}
+
 </style>
 </head>
 <body>
@@ -40,5 +48,9 @@ margin: 0;
 <b>Iniciar sesion</b>
 </button>
 </a>
+<a href="mostrar_coches.php">
+<div class="mostrar"><h2>MOSTRAR COCHES</h2>
+<img src="img/coche.png" width="200px">
+</div>
 </body>
 </html>

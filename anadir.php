@@ -31,6 +31,7 @@ margin-top: 10%;
 <h1>
 <img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;">
 </h1>
+<a href="index-admin.php"><input type="submit" value="Volver"></a>
 <div class="anadir">
 <h2>Insertar Coche</h2>
 <form action="add_coche.php" method="post">
