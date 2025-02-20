@@ -67,19 +67,19 @@ margin: 0;
 </head>
 <body>
 <h1><img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;"></h1>
-<a href="coches.html">
+<a href="coches.php">
 <div class="coches">
     <h2>COCHES</h2>
     <img src="img/coche.png" style="width: 200px; margin-top: -50px;">  
 </div>
 </a>
-<a href="usuarios.html">
+<a href="usuarios.php">
 <div class="usuarios">
     <h2 margin-top>USUARIOS</h2>
     <img src="img/usuario" style="width: 150px; margin-top:0px;">  
 </div>
 </a>
-<a href="alquileres.html">
+<a href="alquileres.php">
     <div class="alquileres">
         <h2 margin-top>ALQUILERES</h2>
         <img src="img/alquileres.png" style="width: 150px; margin-top:0px;">  
