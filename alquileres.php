@@ -86,7 +86,7 @@ margin: 0;
     </div>
 </a>
 </div>
-<a href="index-admin.php`">
+<a href="index-admin.php">
 <div class="inicio">
 <h3>Inicio</h3>
 </div>
