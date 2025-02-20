@@ -98,7 +98,7 @@ background-color: grey;
         <button type="submit">Alquilar</button>
     </td>   
     <td>
-        <img src="img/bmw-x2.jpg" width="300px">
+        <img src="img/mercedesc63.webp" width="300px">
         <br>
         <b>BMW X2</b>
         <br>
