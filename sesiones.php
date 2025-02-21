@@ -20,7 +20,7 @@ if (!$resultado){
     echo "Usuario no encontrado";
     exit();
 }
-if (password_verify($pass,$resultado['password']))
+if (password_verify($pass_cifrada,$resultado['password']))
 {
     $_SESSION["nombre"] = $nombre;
     header("Location: index-cliente.php");

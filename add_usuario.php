@@ -27,6 +27,5 @@ else
 {
     echo "Error al anadir usuario: " . mysqli_error($conn);
 }
-
 mysqli_close($conn);
 ?>

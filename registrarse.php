@@ -35,7 +35,7 @@ border: 2px white solid;
 </head>
 <body>
 <h1><img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;"></h1>
-<form class="registrarse">
+<form class="registrarse" action="registrar2.php" method="post">
     <h2>Registrarse</h2>
     <label><b>Usuario: </b></label><br><input type="text" name="nombre" required>
     <br><br>
@@ -45,7 +45,7 @@ border: 2px white solid;
     <br><br>
     <label><b>Contraseña: </b></label><br><input type="password" name="contra" required>
     <br><br>
-    <label><b> Confirmar Contrseña: </b></label><input type="password" required>
+    <label><b> Confirmar Contrseña: </b></label><input type="password" name="contra2" required>
     <br><br>
     <button type="submit">Enviar</button>
 </form>
