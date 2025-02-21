@@ -14,13 +14,14 @@ if (!$conn)
 $nombre = $_REQUEST['nombre'];
 $apellidos = $_REQUEST['apellidos'];
 $contrasena = $_REQUEST['password'];
+$contrasena_cifrada = password_hash($contrasena, PASSWORD_DEFAULT);
 $dni = $_REQUEST['dni'];
 $saldo = $_REQUEST['saldo'];
 
-$sql = "INSERT INTO usuarios (nombre, apellidos, password , DNI, saldo) VALUES ('$nombre', '$apellidos', '$contrasena', '$dni', '$saldo')";
+$sql = "INSERT INTO usuarios (nombre, apellidos, password , DNI, saldo) VALUES ('$nombre', '$apellidos', '$contrasena_cifrada', '$dni', '$saldo')";
 if (mysqli_query($conn, $sql))
 {
-    echo "Usuario anadido con exito";
+    header("Location: index-admin.php");
 }
 else
 {

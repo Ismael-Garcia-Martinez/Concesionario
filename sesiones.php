@@ -16,14 +16,15 @@ $pass_cifrada = password_hash($pass, PASSWORD_DEFAULT);
 $sql = "SELECT * FROM usuarios where nombre = '$nombre' and dni = '$dni'";
 $consulta = mysqli_query($conn,$sql) or die ("Fallo en la consulta" . mysqli_error($conn));
 $resultado = mysqli_fetch_array($consulta);
-if (!$resultado) {
+if (!$resultado){
     echo "Usuario no encontrado";
     exit();
 }
 if (password_verify($pass,$resultado['password']))
 {
-    echo "holka";
-
+    $_SESSION["nombre"] = $nombre;
+    header("Location: index-cliente.php");
+    exit();
 }
 else
 {
