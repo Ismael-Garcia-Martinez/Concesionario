@@ -38,6 +38,8 @@ border: 2px white solid;
     <h2>Inicio Sesion</h2>
     <label><b>Usuario:</b></label><br><input type="text" name="usuario" required>
     <br><br>
+    <label><b>DNI:</b></label><br><input type="text" name="dni" required>
+    <br><br>
     <label><b>Contraseña:</b></label><br><input type="password" name="contra" required>
     <br><br>
     <button type="submit">Enviar</button>
