@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <style>
 body{
 background-image: url(img/fondo2.jpg);

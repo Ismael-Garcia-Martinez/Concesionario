@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -31,7 +34,7 @@ border: 2px white solid;
 </head>
 <body>
 <h1><img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;"></h1>
-<form class="iniciosesion">
+<form class="iniciosesion" action="sesiones.php" method="get">
     <h2>Inicio Sesion</h2>
     <label><b>Usuario:</b></label><br><input type="text" name="usuario" required>
     <br><br>
@@ -40,28 +43,3 @@ border: 2px white solid;
     <button type="submit">Enviar</button>
 </body>
 </html>
-<?php
-$server = "localhost";
-$user = "root";
-$password = "rootroot";
-$dbname = "concesionario";
-$conn = mysqli_connect($server, $user, $password, $dbname);
-if(!$conn)
-{
-    die ("Conexion fallida" . mysqli_connect_error());
-}
-$nombre = $_REQUEST['usuario'];
-$contra = $_REQUEST['contra'];
-$sql = "SELECT * FROM usuarios where nombre = $nombre && password = $contra";
-
-if (mysqli_query($conn,$sql))
-{
-    echo "El dneiodn";
-}
-else
-{
-    echo "no";
-}
-
-
-?>

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <HTML LANG="es">
 <HEAD>
 <style>

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -57,6 +60,7 @@ background-color: grey;
 <b>Iniciar sesion</b>
 </button>
 </a>
+<a href="index-cliente.php"><input type="button" value="Volver"></a>
 <h2>COCHES DISPONIBLES</h2>
 <table class="tabla">
 <tr>

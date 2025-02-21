@@ -1,4 +1,7 @@
-<HTML LANG="es">
+<?php
+session_start();
+?>
+<HTML lang="es">
 <HEAD>
 <style>
 body{
