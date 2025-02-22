@@ -23,7 +23,7 @@ if (mysqli_num_rows($consulta) == 1)
     $usuario = mysqli_fetch_assoc($consulta);
 
     $_SESSION['usuario'] = $usuario['nombre'];
-    $_SESSION['dni'] = $usuario['dni']
+    $_SESSION['dni'] = $usuario['dni'];
     header("Location: index-cliente.php");
     exit();
 }
