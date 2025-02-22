@@ -30,30 +30,84 @@ margin: 0;
     background-color: rgb(71, 209, 255); 
 }
 .mostrar{
+    display: inline-block;
     width: 30%;
     background-color: grey;
     color: white;
     text-align: center;
-    margin-left: 35%;
 }
-
+.logeado{
+    float: right; 
+    height: 30px; 
+    background-color: rgb(71, 209, 255);
+}
+.cerrar{
+    margin-left: 100%;
+    float: right; 
+    width: 60px; 
+    background-color: rgb(71, 209, 255);
+}
+.alquilar{
+    display: inline-block;
+    width: 30%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+.poner{
+    display: inline-block;
+    width: 30%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
 </style>
 </head>
 <body>
 <h1><img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;"></h1>
-<a href="registrarse.php">
-<button class="registrarse">
-<b>Registrarse</b>
-</button>
-</a>
-<a href="iniciosesion.php">
-<button class="iniciosesion">
-<b>Iniciar sesion</b>
-</button>
-</a>
-<a href="mostrar_coches.php">
-<div class="mostrar"><h2>MOSTRAR COCHES</h2>
-<img src="img/coche.png" width="200px">
-</div>
+<?php
+if (isset($_SESSION['usuario']))
+{
+    echo "<div class='logeado'>Bienvenido, " . $_SESSION['usuario'] . "</div>";
+    echo "<br><br>";
+    echo "<a href='cerrarsesion.php'>";
+    echo "<button class='cerrar'>";
+    echo "<b>Cerrar Sesion</b>";
+    echo "</button>";
+    echo "</a>";
+    echo "<a href='mostrar_coches.php'>";
+    echo "<div class='mostrar'><h2>MOSTRAR COCHES</h2>";
+    echo "<img src='img/coche.png' width='200px'>";
+    echo "</div>";
+    echo "</a>";
+    echo "<a href='alquilar_coche.php'";
+    echo "<div class='alquilar'><h2>ALQUILAR COCHES</h2>";
+    echo "<img src='img/coche.png' width='200px'>";
+    echo "</div>";
+    echo "</a>";
+    echo "<a href='poner_alquiler.php'";
+    echo "<div class='poner'><h2>PONER ALQUILER</h2>";
+    echo "<img src='img/coche.png' width='200px'>";
+    echo "</div>";
+    echo "</a>";
+}
+else
+{
+    echo "<a href='registrarse.php'>";
+    echo "<button class='registrarse'>";
+    echo "<b>Registrarse</b>";
+    echo "</button>";
+    echo "</a>";
+    echo "<a href='iniciosesion.php'>";
+    echo "<button class='iniciosesion'>";
+    echo "<b>Iniciar sesion</b>";
+    echo "</button>";
+    echo "</a>";
+    echo "<a href='mostrar_coches.php'>";
+    echo "<div class='mostrar'><h2>MOSTRAR COCHES</h2>";
+    echo "<img src='img/coche.png' width='200px'>";
+    echo "</div>";
+}
+?>
 </body>
 </html>
