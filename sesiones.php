@@ -29,6 +29,6 @@ if (mysqli_num_rows($consulta) == 1)
 }
 else
 {
-    echo "Credenciales incorrectas"
+    echo "Credenciales incorrectas";
 }
 ?>
