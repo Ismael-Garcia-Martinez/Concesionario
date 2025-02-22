@@ -45,71 +45,135 @@ td{
 text-align: center;
 background-color: grey;
 }
-
+.logeado{
+    float: right; 
+    height: 30px; 
+    background-color: rgb(71, 209, 255);
+}
+.cerrar{
+    margin-left: 100%;
+    float: right; 
+    width: 60px; 
+    background-color: rgb(71, 209, 255);
+}
 </style>
 </head>
 <body>
 <h1><img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;"></h1>
-<a href="registrarse.php">
-<button class="registrarse">
-<b>Registrarse</b>
-</button>
-</a>
-<a href="iniciosesion.php">
-<button class="iniciosesion">
-<b>Iniciar sesion</b>
-</button>
-</a>
-<a href="index-cliente.php"><input type="button" value="Volver"></a>
-<h2>COCHES DISPONIBLES</h2>
-<table class="tabla">
-<tr>
-    <td>
-        <img src="img/seat-arona.avif" width="300px">
-        <br>
-        <b>SEAT ARONA</b>
-        <br>
-        <button type="submit">Alquilar</button>
-    </td>
-    <td>
-        <img src="img/opel-corsa.jpg" width="300px">
-        <br>
-        <b>OPEL CORSA</b>
-        <br>
-        <button type="submit">Alquilar</button>
-    </td>   
-    <td>
-        <img src="img/bmw-x2.jpg" width="300px">
-        <br>
-        <b>BMW X2</b>
-        <br>
-        <button type="submit">Alquilar</button>
-    </td>   
-</tr>
-<tr>
-    <td>
-        <img src="img/peugeot-308.jpg" width="300px">
-        <br>
-        <b>PEUGEOT 308</b>
-        <br>
-        <button type="submit">Alquilar</button>
-    </td>
-    <td>
-        <img src="img/audia4.jpg" width="300px">
-        <br>
-        <b>AUDI A4</b>
-        <br>
-        <button type="submit">Alquilar</button>
-    </td>   
-    <td>
-        <img src="img/mercedesc63.webp" width="300px">
-        <br>
-        <b>BMW X2</b>
-        <br>
-        <button type="submit">Alquilar</button>
-    </td>   
-</tr>
-
-</table>
+<?php
+if (isset($_SESSION['usuario']))
+{
+    echo "<div class='logeado'>Bienvenido, " . $_SESSION['usuario'] . "</div>";
+    echo "<br><br>";
+    echo "<a href='cerrarsesion.php'>";
+    echo "<button class='cerrar'>";
+    echo "<b>Cerrar Sesion</b>";
+    echo "</button>";
+    echo "</a>";
+    echo "<a href='index-cliente.php'><input type='button' value='Volver'></a>";
+    echo "<h2>COCHES DISPONIBLES</h2>";
+    echo "<table class='tabla'>";
+    echo "<tr>";
+    echo "<td>";
+    echo "<img src='img/seat-arona.avif' width='300px'>";
+    echo "<br>";
+    echo "<b>SEAT ARONA</b>";
+    echo "<br>";
+    echo "<a href='formulario_alquilar.php'><button type='submit'>Alquilar</button></a>";
+    echo "<td>";
+    echo "<img src='img/opel-corsa.jpg' width='300px'>";
+    echo "<br>";
+    echo "<b>OPEL CORSA</b>";
+    echo "<br>";
+    echo "<a href='formulario_alquilar.php'><button type='submit'>Alquilar</button></a>";
+    echo "<td>";
+    echo "<img src='img/bmw-x2.jpg' width='300px'>";
+    echo "<br>";
+    echo "<b>BMW X2</b>";
+    echo "<br>";
+    echo "<a href='formulario_alquilar.php'><button type='submit'>Alquilar</button></a>";
+    echo "</tr>";
+    echo "<tr>";
+    echo "<td>";
+    echo "<img src='img/peugeot-308.jpg' width='300px'>";
+    echo "<br>";
+    echo "<b>PEUGEOT 308</b>";
+    echo "<br>";
+    echo "<a href='iniciosesion.php'><button type='submit'>Alquilar</button></a>";    echo "</td>";
+    echo "<td>";
+    echo "<img src='img/audia4.jpg' width='300px'>";
+    echo "<br>";
+    echo "<b>AUDI A4</b>";
+    echo "<br>";
+    echo "<a href='formulario_alquilar.php'><button type='submit'>Alquilar</button></a>";
+    echo "</td>";   
+    echo "<td>";
+    echo "<img src='img/mercedesc63.webp' width='300px'>";
+    echo "<br>";
+    echo "<b>MERCEDES C63</b>";
+    echo "<br>";
+    echo "<a href='iniciosesion.php'><button type='submit'>Alquilar</button></a>";    echo "</td>";   
+    echo "</tr>";
+    echo "</table>";
+}
+else
+{
+    echo "<a href='registrarse.php'>";
+    echo "<button class='registrarse'>";
+    echo "<b>Registrarse</b>";
+    echo "</button>";
+    echo "</a>";
+    echo "<a href='iniciosesion.php'>";
+    echo "<button class='iniciosesion'>";
+    echo "<b>Iniciar sesion</b>";
+    echo "</button>";
+    echo "</a>";
+    echo "<a href='index-cliente.php'><input type='button' value='Volver'></a>";
+    echo "<h2>COCHES DISPONIBLES</h2>";
+    echo "<table class='tabla'>";
+    echo "<tr>";
+    echo "<td>";
+    echo "<img src='img/seat-arona.avif' width='300px'>";
+    echo "<br>";
+    echo "<b>SEAT ARONA</b>";
+    echo "<br>";
+    echo "<a href='iniciosesion.php'><button type='submit'>Alquilar</button></a>";    echo "</td>";
+    echo "<td>";
+    echo "<img src='img/opel-corsa.jpg' width='300px'>";
+    echo "<br>";
+    echo "<b>OPEL CORSA</b>";
+    echo "<br>";
+    echo "<a href='iniciosesion.php'><button type='submit'>Alquilar</button></a>";    echo "</td>"; 
+    echo "<td>";
+    echo "<img src='img/bmw-x2.jpg' width='300px'>";
+    echo "<br>";
+    echo "<b>BMW X2</b>";
+    echo "<br>";
+    echo "<a href='iniciosesion.php'><button type='submit'>Alquilar</button></a>";    echo "</td>";
+    echo "</tr>";
+    echo "<tr>";
+    echo "<td>";
+    echo "<img src='img/peugeot-308.jpg' width='300px'>";
+    echo "<br>";
+    echo "<b>PEUGEOT 308</b>";
+    echo "<br>";
+    echo "<a href='iniciosesion.php'><button type='submit'>Alquilar</button></a>";    echo "</td>";
+    echo "<td>";
+    echo "<img src='img/audia4.jpg' width='300px'>";
+    echo "<br>";
+    echo "<b>AUDI A4</b>";
+    echo "<br>";
+    echo "<a href='iniciosesion.php'><button type='submit'>Alquilar</button></a>";
+    echo "</td>";   
+    echo "<td>";
+    echo "<img src='img/mercedesc63.webp' width='300px'>";
+    echo "<br>";
+    echo "<b>MERCEDES C63</b>";
+    echo "<br>";
+    echo "<a href='iniciosesion.php'><button type='submit'>Alquilar</button></a>";    echo "</td>";   
+    echo "</tr>";
+    echo "</table>";
+}
+?>
 </body>
 </html>
