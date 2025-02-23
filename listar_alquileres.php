@@ -97,7 +97,7 @@ if ($nfilas > 0)
 print ("<div class='tabla'>");
 print ("<TABLE>\n");
 print ("<TH>ID_ALQUILER</TH>\n");
-print ("<TH>ID_USUARIO</TH>\n");
+print ("<TH>DNI_USUARIO</TH>\n");
 print ("<TH>ID_COCHE</TH>\n");
 print ("<TH>PRESTADO</TH>\n");
 print ("<TH>DEVUELTO</TH>\n");
@@ -109,7 +109,7 @@ for ($i=0; $i<$nfilas; $i++)
    $resultado = mysqli_fetch_array ($consulta);
    print ("<TR>\n");
    print ("<TD>" . $resultado['id_alquiler'] . "</TD>\n");
-   print ("<TD>" . $resultado['id_usuario'] . "</TD>\n");
+   print ("<TD>" . $resultado['dni_usuario'] . "</TD>\n");
    print ("<TD>" . $resultado['id_coche'] . "</TD>\n");
    print ("<TD>" . $resultado['prestado'] . "</TD>\n");
    print ("<TD>" . $resultado['devuelto'] . "</TD>\n");

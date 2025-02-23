@@ -18,7 +18,8 @@ $coche = mysqli_fetch_assoc($consulta);
 $precio = $coche['precio'];
 
 $usuario = $_SESSION['usuario'];
-$sql_saldo = "SELECT saldo FROM usuarios WHERE nombre = '$usuario'";
+$dni = $_SESSION['dni'];
+$sql_saldo = "SELECT saldo FROM usuarios WHERE id_usuario = '$id'";
 $consulta2 = mysqli_query($conn,$sql_saldo);
 $persona = mysqli_fetch_assoc($consulta2);
 $saldo =  $persona['saldo'];
@@ -34,7 +35,9 @@ $sql_nuevo_saldo = "UPDATE usuarios SET saldo = '$saldo2' WHERE nombre = '$usuar
 mysqli_query($conn,$sql_nuevo_saldo);
 
 $sql_alquilado = "UPDATE coches SET alquilado = 1 WHERE id_coche = '$alquilar'";
+$sql_alquileres = "INSERT INTO alquileres(dni_usuario,id_coche,prestado) VALUES('$dni','$alquilar',now())";
 mysqli_query($conn,$sql_alquilado);
+mysqli_query($conn,$sql_alquileres);
 
 echo "Coche alquilado.";
 echo "<br><a href='index-cliente.php'>Volver</a>";
