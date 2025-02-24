@@ -29,12 +29,20 @@ margin: 0;
     height: 30px; 
     background-color: rgb(71, 209, 255); 
 }
-.mostrar{
+.mostrar1{
     display: inline-block;
     width: 30%;
     background-color: grey;
     color: white;
     text-align: center;
+}
+.mostrar2{
+    display: inline-block;
+    width: 30%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    margin-left: 35%;
 }
 .logeado{
     float: right; 
@@ -61,6 +69,12 @@ margin: 0;
     color: white;
     text-align: center;
 }
+.bienvenida{
+    background-color: grey;
+    color: white;
+    width: 30%;
+    margin-left: 42%;
+}
 </style>
 </head>
 <body>
@@ -76,7 +90,7 @@ if (isset($_SESSION['usuario']))
     echo "</button>";
     echo "</a>";
     echo "<a href='mostrar_coches.php'>";
-    echo "<div class='mostrar'><h2>MOSTRAR COCHES</h2>";
+    echo "<div class='mostrar1'><h2>MOSTRAR COCHES</h2>";
     echo "<img src='img/coche.png' width='200px'>";
     echo "</div>";
     echo "</a>";
@@ -104,10 +118,12 @@ else
     echo "</button>";
     echo "</a>";
     echo "<a href='mostrar_coches.php'>";
-    echo "<div class='mostrar'><h2>MOSTRAR COCHES</h2>";
+    echo "<div class='mostrar2'><h2>MOSTRAR COCHES</h2>";
     echo "<img src='img/coche.png' width='200px'>";
     echo "</div>";
 }
 ?>
+<br><br>
+<a href="bienvenida.php" class="bienvenida">VOLVER AL MENU DE BIENVENIDA</a>
 </body>
 </html>

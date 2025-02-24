@@ -51,13 +51,18 @@ h2{
 }
 th{
 border: 2px solid white;
+height: 30px;
+width: 50px;
    }
 td{
 border: 2px solid white;
+height: 30px;
+width: 50px;
    }
 table{
 background-color: black;
-margin-left: 38%;
+margin-left: 43%;
+text-align: center;
 } 
 .volver{
 background-color: black;

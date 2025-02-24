@@ -44,6 +44,12 @@ margin: 0;
     color: white;
     margin-top: -200px;
            }
+.bienvenida{
+    background-color: grey;
+    color: white;
+    width: 30%;
+    margin-left: 42%;
+}
 
 </style>
 </head>
@@ -68,5 +74,6 @@ margin: 0;
     </div>
 </a>
 </div>
+<a href="bienvenida.php" class="bienvenida">VOLVER AL MENU DE BIENVENIDA</a>
 </body>
 </html>
