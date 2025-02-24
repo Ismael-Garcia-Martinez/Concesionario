@@ -4,13 +4,50 @@
     <meta charset="UTF-8">
     
     <title>Concesionario</title>
+<style>
+body{
+background-image: url(img/fondo2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+text-align: center;
+    }
+h1{
+background-color: black;
+text-align: center;
+border: 2px white solid; 
+margin: 0;
+  }
+h2{
+background-color: rgb(92, 85, 85);
+text-align: center;
+border: 2px white solid; 
+margin: 0;
+}
+h3{ 
+text-align: center;
+background-color: rgb(92, 85, 85);
+text-align: center;
+margin: 0;
+}
+.cliente{
+margin-top: 20%;
+background-color: rgb(92, 85, 85);
+color: white;
+}
+.admin{
+background-color: rgb(92, 85, 85);
+color: white;
+}
+</style>
 </head>
 <body>
-<h1>¡BIENVENIDO AL CONCESIONARIO!</h1>
+    <h1><img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;"></h1>
+<h2>¡BIENVENIDO AL CONCESIONARIO!</h2>
 <h3>SELECCIONE EL TIPO DE USUARIO QUE ERES:</h3>
 <div class="usuarios">
-    <a href="index-cliente.php">Cliente</a>
-    <a href="index-admin.php">Administrador</a>
+    <a href="index-cliente.php" class="cliente">Cliente</a>
+    <a href="index-admin.php" class="admin">Administrador</a>
 </div>
 </body>
 </html>

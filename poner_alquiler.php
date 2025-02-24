@@ -22,9 +22,9 @@ margin: 0;
     float: right; 
     height: 30px; 
     background-color: rgb(71, 209, 255);
+    color: black;
 }
 .cerrar{
-    margin-left: 100%;
     float: right; 
     width: 60px; 
     background-color: rgb(71, 209, 255);
@@ -35,6 +35,11 @@ margin: 0;
     background-color: grey;
     border: 2px white solid;
     border-radius: 20px;
+}
+.volver{
+    background-color: black;
+    color: white;
+    margin-left: 49%;
 }
 </style>
 </head>
@@ -47,7 +52,7 @@ if (isset($_SESSION['usuario']))
     echo "<br><br>";
 
     echo "<a href='index-cliente.php'>";
-    echo "<button type='submit'>Volver</button>";
+    echo "<button type='submit' class='volver'>Volver</button>";
     echo "</a>";
 
     echo "<a href='cerrarsesion.php'>";

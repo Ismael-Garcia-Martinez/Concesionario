@@ -30,11 +30,16 @@ text-align: center;
 border-radius: 30px;
 border: 2px white solid;
 }
-
+.volver{
+    background-color: black;
+    color: white;
+    margin-left: 49%;
+}
 </style>
 </head>
 <body>
 <h1><img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;"></h1>
+<a href='index-cliente.php'><input type="button" value="Volver" class="volver"></a>
 <form class="registrarse" action="registrar2.php" method="post">
     <h2>Registrarse</h2>
     <label><b>Usuario: </b></label><br><input type="text" name="nombre" required>

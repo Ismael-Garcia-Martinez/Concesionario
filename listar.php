@@ -14,7 +14,7 @@ text-align: center;
 h1{
 background-color: black;
 text-align: center;
-border: 2px white solid;
+border: 2px white solid; 
 margin: 0;
   }
 .anadir{

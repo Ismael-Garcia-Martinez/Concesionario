@@ -23,7 +23,6 @@ margin: 0;
     background-color: rgb(71, 209, 255);
 }
 .cerrar{
-    margin-left: 100%;
     float: right; 
     width: 60px; 
     background-color: rgb(71, 209, 255);
@@ -47,6 +46,11 @@ background-color: black;
 margin-left: 35%;
 margin-top: 10%;
       }
+.volver{
+background-color: black;
+color: white;
+margin-left: 49%;
+}
 </style>
 </head>
 <body>
@@ -57,7 +61,7 @@ if (isset($_SESSION['usuario']))
     echo "<div class='logeado'>Bienvenido, " . $_SESSION['usuario'] . "</div>";
     echo "<br><br>";
     echo "<a href='index-cliente.php'>";
-    echo "<button type='submit'>Volver</button>";
+    echo "<button type='submit' class='volver'>Volver</button>";
     echo "</a>";
     echo "<a href='cerrarsesion.php'>";
     echo "<button class='cerrar'>";
