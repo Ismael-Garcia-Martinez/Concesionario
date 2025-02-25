@@ -21,13 +21,14 @@ margin: 0;
 .logeado{
     float: right; 
     height: 30px; 
-    background-color: rgb(71, 209, 255);
-    color: black;
+    background-color: grey;
+    color: white;
 }
 .cerrar{
     float: right; 
     width: 60px; 
-    background-color: rgb(71, 209, 255);
+    background-color: grey;
+    color: white;
 }
 .info_coche{
     margin: 10%;

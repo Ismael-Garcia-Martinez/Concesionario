@@ -50,11 +50,35 @@ margin: 0;
     width: 30%;
     margin-left: 42%;
 }
-
+.logeado{
+    float: right; 
+    height: 30px; 
+    background-color: grey;
+    color: white;
+}
+.cerrar{
+    margin-left: 100%;
+    float: right; 
+    width: 60px; 
+    background-color: grey;
+    color: white;
+}
 </style>
 </head>
 <body>
 <h1><img src="img/fondo.jpg" style="width: 150px; text-align: left;">CONCESIONARIO<img src="img/fondo.jpg" style="width: 150px;"></h1>
+<?php
+if (isset($_SESSION['usuario']))
+{
+    echo "<div class='logeado'>Bienvenido, " . $_SESSION['usuario'] . "</div>";
+    echo "<br><br>";
+    echo "<a href='cerrarsesion.php'>";
+    echo "<button class='cerrar'>";
+    echo "<b>Cerrar Sesion</b>";
+    echo "</button>";
+    echo "</a>";
+}
+?>
 <a href="coches.php">
 <div class="coches">
     <h2>COCHES</h2>

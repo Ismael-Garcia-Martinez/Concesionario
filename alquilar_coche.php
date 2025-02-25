@@ -20,12 +20,14 @@ margin: 0;
 .logeado{
     float: right; 
     height: 30px; 
-    background-color: rgb(71, 209, 255);
+    background-color: grey;
+    color: white;
 }
 .cerrar{
     float: right; 
     width: 60px; 
-    background-color: rgb(71, 209, 255);
+    background-color: grey;
+    color: white;
 }
 .listar{
     background-color: gray;
@@ -43,10 +45,15 @@ border: 2px solid white;
    }
 table{
 background-color: black;
-margin-left: 35%;
-margin-top: 10%;
+margin-left: 40%;
+margin-top: 5%;
       }
 .volver{
+background-color: black;
+color: white;
+margin-left: 49%;
+}
+.confirmar_alquiler{
 background-color: black;
 color: white;
 margin-left: 49%;
@@ -105,7 +112,8 @@ for ($i=0; $i<$nfilas; $i++)
 }
 
 print ("</TABLE>\n");
-print ("<button type='submit' name='confirmar_alquilar'>Alquilar</button>");
+print "<br><br>";
+print ("<button type='submit' name='confirmar_alquilar' class='confirmar_alquiler'>Alquilar</button>");
 }
 else
 {

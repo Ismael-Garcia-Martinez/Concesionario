@@ -48,7 +48,7 @@ margin: 0;
 <h3>SELECCIONE EL TIPO DE USUARIO QUE ERES:</h3>
 <div class="usuarios">
     <a href="index-cliente.php" class="cliente"><b><input type="button" value="CLIENTE" class="cliente"></b></a>
-    <a href="index-admin.php" class="admin"><b><input type="button" value="ADMINISTRADOR" class="admin"></b></a>
+    <a href="login-admin.php" class="admin"><b><input type="button" value="ADMINISTRADOR" class="admin"></b></a>
 </div>
 </body>
 </html>

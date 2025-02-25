@@ -22,12 +22,14 @@ margin: 0;
 .registrarse{
     float: right; 
     height: 30px; 
-    background-color: rgb(71, 209, 255);
+    background-color: grey;
+    color: white;
       }
 .iniciosesion{
     float: right; 
     height: 30px; 
-    background-color: rgb(71, 209, 255); 
+    background-color: grey; 
+    color: white;
 }
 .mostrar1{
     display: inline-block;
@@ -47,13 +49,15 @@ margin: 0;
 .logeado{
     float: right; 
     height: 30px; 
-    background-color: rgb(71, 209, 255);
+    background-color: grey;
+    color: white;
 }
 .cerrar{
     margin-left: 100%;
     float: right; 
     width: 60px; 
-    background-color: rgb(71, 209, 255);
+    background-color: grey;
+    color: white;
 }
 .alquilar{
     display: inline-block;

@@ -30,7 +30,7 @@ if (mysqli_num_rows($consulta) == 1) {
 
 $cifrada_contra = password_hash($pass1, PASSWORD_DEFAULT);
 
-$sql = "INSERT INTO usuarios (password, nombre, apellidos, dni) VALUES ('$cifrada_contra', '$nombre', '$apellido', '$dni')";
+$sql = "INSERT INTO usuarios (password, nombre, apellidos, dni, tipo_usuario) VALUES ('$cifrada_contra', '$nombre', '$apellidos', '$dni','cliente')";
 
 if (mysqli_query($conn, $sql)) {
     header("Location: index-cliente.php");
